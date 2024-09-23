@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iraci - CADASTRO</title>
+</head>
+<body>
+
+    <div>
+        <h1>Login:</h1>
+        <form action="{% url 'login' %}" method="POST"> {% csrf_token %}
+            <input placeholder="Usuário" type="text" name="username"> <br>
+            <input placeholder="Senha" type="password" name="password">  <br> <br>
+            <input type="submit" value="ENTRAR">  <br> <br>
+        </form>
+    </div><br>
+</body>
+</html>

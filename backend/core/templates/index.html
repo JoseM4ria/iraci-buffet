@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iraci - Encomendas</title>
+</head>
+<body>
+    <div>
+        <h1>BEM VINDO</h1><br> <br>
+        <form action="{% url 'login' %}" method="POST">
+            <h2>LOGIN</h2>
+            <input type="submit" value="ENTRAR">  <br> <br>
+        </form>
+        <form action="{% url 'cadastro' %}" method="POST">
+        <h2>CADASTRO</h2>
+                <input type="submit" value="NOVO CLIENTE">  <br> <br>
+        </form>
+
+    </div>
+</body>
+</html>
