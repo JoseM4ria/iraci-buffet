@@ -29,6 +29,7 @@ def login(request):
         return render(request, template_name='login.html')
     else:
         username = request.POST.get('username')
+
         senha = request.POST.get('password')
 
         user = authenticate(username=username, password=senha)
